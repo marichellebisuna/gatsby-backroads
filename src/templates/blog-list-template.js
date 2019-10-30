@@ -5,6 +5,7 @@ import { graphql } from 'gatsby';
 import styles from '../components/css/blog.module.css';
 import BlogCard from '../components/Blog/BlogCard';
 import Title from '../components/Title';
+import SEO from '../components/SEO';
 
 const BlogList = (props) => {
 	console.log(props);
@@ -19,6 +20,7 @@ const BlogList = (props) => {
 
 	return (
 		<Layout>
+			<SEO title="Blogs" />
 			<section className={styles.blog}>
 				<Title title="latest" subtitle="posts" />
 				<div className={styles.center}>

@@ -8,10 +8,6 @@ const getSiteData = graphql`
 				author
 				description
 				title
-				data {
-					age
-					name
-				}
 			}
 		}
 	}
